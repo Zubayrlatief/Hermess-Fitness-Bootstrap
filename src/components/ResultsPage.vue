@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <section id="Philosophy">
         
-    </div>
+    </section>
 </template>
 <script>
 export default {
