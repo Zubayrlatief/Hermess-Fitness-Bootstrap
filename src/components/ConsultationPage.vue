@@ -16,6 +16,6 @@ export default {
     }
 
     .container{
-        bz
+
     }
 </style>
