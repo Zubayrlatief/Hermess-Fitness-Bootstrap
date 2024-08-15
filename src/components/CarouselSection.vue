@@ -1,7 +1,7 @@
 <template>
   <section id="carousel-section" class="my-5">
-    <div class="container">
-
+    <h1 class="h1-text">Real Results</h1>
+    <div class="autoShow">
       <!-- Carousel 1 -->
       <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -85,11 +85,47 @@ export default {
 </script>
 
 <style scoped>
-.container{
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  width: 100%;
+#carousel-section {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensure it spans the full width */
+}
+.my-5 {
+  margin-top: -2rem !important;
+  margin-bottom: -2rem !important;
+}
+.h1-text{
+    border: 2px rgb(29, 25, 25) solid;
+    color: rgb(193, 189, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+    font-style: italic;
+
+}
+/* Auto Show Animation */
+.autoShow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    padding: 4rem;
+    margin-bottom: 2rem;
+    animation: autoShowAnimation both;
+    animation-timeline: view(100% 1%);
+}
+
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 

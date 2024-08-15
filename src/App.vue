@@ -4,15 +4,14 @@
   <NavBar/>
   <LandingPage/>
   <PhilosophyPage/>
+  <CarouselSection />
   <ResultsPage/>
   <CalculatorPage/>
   <ConsultationPage/>
   <FooterBottom/>
   <router-view/>
  </div>
- <div id="app">
-    <CarouselSection />
-  </div>
+ 
 </template>
 
 <script>
@@ -42,5 +41,7 @@ export default {
 
 
 <style>
+.div{
 
+}
 </style>

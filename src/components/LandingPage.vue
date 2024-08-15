@@ -2,14 +2,15 @@
     <section id="landing">
         <div class="container-page">
             <img class="landing-image" src="https://zubayrlatief.github.io/hosted-images/IMG_2337.jpg" alt="image">
-            <button class="batman" >
-  <span >TRANSFORM</span>
-</button>
             <div class="card">
                 <p><span>calorie calc</span></p>
                 <p><span>total calc</span></p>
                 <p><span>bmi calc</span></p>
             </div>
+            <div class="mid">
+            <button class="btn-12"><span>TRANSFORM</span></button>
+            <h2 class="text-1">TRANFORM YOUR LIFE</h2>
+        </div>
         </div>
     </section>
 </template>
@@ -30,12 +31,11 @@ export default {
 }
 
 .landing-image {
-    width: 30%;
+    width: 25%;
     height: auto;
     max-height: 700px; /* Adjusted to keep a moderate size */
-    margin-left: 2rem;
-    margin-top: 1rem; /* Slightly reduced */
-}
+    margin-right: 10%;
+    }
 
 /* Whole page */
 .container-page {
@@ -47,6 +47,17 @@ export default {
     margin: 0;
 }
 
+.text-1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: #827f80;
+}
+
+.text-2{
+  padding: 0;
+  margin: 0;
+}
 
 /* Card */
 .card {
@@ -59,8 +70,6 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding: 0.5rem; /* Added some padding for spacing */
-    margin: 0 auto;
 }
 
 .card p {
@@ -80,7 +89,7 @@ export default {
 
 .card p span {
     min-width: 12em; /* Slightly larger min-width */
-    padding: .5em;
+    padding-left: 0.5em;
     text-align: center;
     transform: rotate(-90deg);
     transition: all .5s;
@@ -120,80 +129,137 @@ export default {
     .card p:hover {
         flex: 1;
     }
+
+    .mid{
+      max-width: 50%;
+    }
 }
 
-
-/* button */
-
-.batman{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-button {
- border: none;
- position: relative;
- width: 200px;
- height: 73px;
- padding: 0;
- z-index: 2;
- -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
- mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
- -webkit-mask-size: 100%;
- cursor: pointer;
- background-color: white;
- transform: translateY(8px)
+/* mid */
+.mid{
+    margin-left: 10%;
+    margin-top: 20%;
 }
 
-button:after {
- content: '';
- position: absolute;
- left: 0;
- right: 0;
- bottom: 0;
- box-shadow: 0px 0 0 0 white;
- transition: all 2s ease;
+/* button class */ 
+.btn-12,
+.btn-12 *,
+.btn-12 :after,
+.btn-12 :before,
+.btn-12:after,
+.btn-12:before {
+  border: 0 solid;
+  box-sizing: border-box;
 }
 
-button:hover:after {
- box-shadow: 0px -13px 56px 12px #ffffffa6;
+.btn-12 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
 }
 
-button span {
- position: absolute;
- width: 100%;
- font-size: 15px;
- font-weight: 100;
- left: 50%;
- top: 39%;
- letter-spacing: 3px;
- text-align: center;
- transform: translate(-50%,-50%);
- color: black;
- transition: all 2s ease;
+.btn-12:disabled {
+  cursor: default;
 }
 
-button:hover span {
- color: white;
+.btn-12:-moz-focusring {
+  outline: auto;
 }
 
-button:before {
- content: '';
- position: absolute;
- width: 0;
- height: 100%;
- background-color: black;
- left: 50%;
- top: 50%;
- transform: translate(-50%, -50%);
- transition: all 1s ease;
+.btn-12 svg {
+  display: block;
+  vertical-align: middle;
 }
 
-button:hover:before {
- width: 100%;
+.btn-12 [hidden] {
+  display: none;
 }
 
+.btn-12 span {
+  mix-blend-mode: difference;
+}
+
+.btn-12:after,
+.btn-12:before {
+  background: linear-gradient(
+    90deg,
+    #fff 25%,
+    transparent 0,
+    transparent 50%,
+    #fff 0,
+    #fff 75%,
+    transparent 0
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, 100%));
+  transition: transform 0.2s ease;
+}
+
+.btn-12:after {
+  --progress: -100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 25%,
+    #fff 0,
+    #fff 50%,
+    transparent 0,
+    transparent 75%,
+    #fff 0
+  );
+  z-index: -1;
+}
+
+.btn-12:hover:after,
+.btn-12:hover:before {
+  --progress: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Smaller screens (tablets, mobile devices) */
+@media (max-width: 1024px) {
+  .btn-12 {
+    font-size: 90%;
+    padding: 0.6rem 2.5rem;
+  }
+}
+
+/* Even smaller screens (phones) */
+@media (max-width: 768px) {
+  .btn-12 {
+    font-size: 80%;
+    padding: 0.5rem 2rem;
+  }
+}
+
+/* Very small screens (small phones) */
+@media (max-width: 480px) {
+  .btn-12 {
+    font-size: 70%;
+    padding: 0.4rem 1.5rem;
+  }
+}
 
 
 </style>
