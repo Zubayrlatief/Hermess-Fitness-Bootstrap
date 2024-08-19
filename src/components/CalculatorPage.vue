@@ -189,7 +189,7 @@
   
   <style scoped>
   #Calculator {
-    background-color: #212121;
+    background-color: #050404;
   }
   
   /* Existing Styles for BMI Calculator */

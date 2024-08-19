@@ -1,6 +1,6 @@
 <template>
   <section id="carousel-section" class="my-5">
-    <h1 class="h1-text">Real Results</h1>
+    <h1 class="h1-text">REAL RESULTS</h1>
     <div class="autoShow">
       <!-- Carousel 1 -->
       <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
@@ -95,6 +95,7 @@ export default {
   margin-top: -2rem !important;
   margin-bottom: -2rem !important;
 }
+
 .h1-text{
     border: 2px rgb(29, 25, 25) solid;
     color: rgb(193, 189, 185);
@@ -105,13 +106,14 @@ export default {
     font-style: italic;
 
 }
+
+.carousel-item{
+  margin: 2rem;
+}
 /* Auto Show Animation */
 .autoShow {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 20%;
-    padding: 4rem;
     margin-bottom: 2rem;
     animation: autoShowAnimation both;
     animation-timeline: view(100% 1%);
@@ -128,6 +130,21 @@ export default {
     }
 }
 
+.h1-text{
+    animation: autoShowAnimation both;
+    animation-timeline: view(10% 50%);
+}
+
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
 
 </style>
 

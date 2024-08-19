@@ -54,10 +54,6 @@ export default {
     color: #827f80;
 }
 
-.text-2{
-  padding: 0;
-  margin: 0;
-}
 
 /* Card */
 .card {
@@ -80,7 +76,7 @@ export default {
     border-radius: 2px;
     transition: all .5s;
     background: #212121;
-    border: 1px solid #ff5a91;
+    border: 1px solid #b4393984;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +90,7 @@ export default {
     transform: rotate(-90deg);
     transition: all .5s;
     text-transform: uppercase;
-    color: #ff568e;
+    color: #c51e1e84;;
     letter-spacing: .1em;
 }
 

@@ -6,8 +6,8 @@
   <PhilosophyPage/>
   <CarouselSection />
   <ResultsPage/>
-  <CalculatorPage/>
   <ConsultationPage/>
+  <CalculatorPage/>
   <FooterBottom/>
   <router-view/>
  </div>
@@ -20,8 +20,8 @@ import LandingPage from './components/LandingPage.vue';
 import PhilosophyPage from './components/PhilosophyPage.vue';
 import ResultsPage from './components/ResultsPage.vue';
 import CarouselSection from './components/CarouselSection.vue';
-import CalculatorPage from './components/CalculatorPage.vue';
 import ConsultationPage from './components/ConsultationPage.vue';
+import CalculatorPage from './components/CalculatorPage.vue';
 import FooterBottom from './components/FooterBottom.vue';
 
 export default {
@@ -31,8 +31,8 @@ export default {
     PhilosophyPage,
     ResultsPage,
     CarouselSection,
-    CalculatorPage,
     ConsultationPage,
+    CalculatorPage,
     FooterBottom,
   }
 };
